@@ -1,0 +1,92 @@
+@function iurl($url){
+  @return url('/* @echo ROOT */img/' + $url)
+}
+@function furl($url){
+  @return url( $url)
+}
+@mixin clearfix(){
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin flex-center-content(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin arrow-right($size, $color){
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}
+@mixin arrow-left($size, $color){
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-right: $size solid $color;
+}
+@mixin breakpoint($point){
+
+  @if ($point == lg){
+    @media (min-width: 1200px){ @content }
+  }
+  @else if ($point == md){
+    @media (min-width: 992px) and (max-width: 1199px){ @content }
+  }
+
+  @else if ($point == sm){
+    @media (min-width: 768px) and (max-width: 991px){ @content }
+  }
+
+  @else if ($point == xs){
+    @media (max-width: 767px) and (min-width: 641px){ @content }
+  }
+
+
+  @else if ($point == xxs){
+    @media (max-width: 640px) and (min-width: 481px){ @content }
+  }
+
+  @else if ($point == xxxs){
+    @media  (max-width: 480px){ @content }
+  }
+}
+
+@mixin square($size){
+  position: relative;
+  width: $size;
+  padding-bottom : $size;
+}
+
+@mixin flex-vertical-center(){
+  display: flex;
+  align-items: center;
+}
+@mixin flex-justify(){
+  display: flex;
+  justify-content: center;
+}
+@mixin shadow(){
+  box-shadow: 0 0 2px $color-grey-dark;
+}

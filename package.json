@@ -1,0 +1,33 @@
+{
+  "name": "Hangman",
+  "version": "1.0.0",
+  "description": "Hangman game",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Piotr Łepkowski <piotr@webkowski.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.1.0",
+    "del": "^2.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-prettify": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7"
+  }
+}

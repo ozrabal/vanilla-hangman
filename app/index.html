@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+ 
+</head>
+<body class="container">
+    <div id="game-over" class="overlay hidden">
+        <h1>Game over</h1>
+        <a id="start" class="btn" href="#">New Word</a>
+    </div>
+    <main>
+        <section class="folk">
+            <div id="folk"></div>
+        </section>
+        <section class="missed">
+          <h2>You missed:</h2>
+          <span id="missed" class="missed"></span>
+        </section>
+        <section class="word">
+            <div id="placeholder"></div>
+        </section>
+    </main>
+     <script src="js/main.js"></script>
+</body>
+</html>
